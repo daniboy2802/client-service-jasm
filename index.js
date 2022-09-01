@@ -1,4 +1,5 @@
 const express = require('express')
+var cors = require('cors')
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -6,6 +7,7 @@ const UserFormService = require('./services/userForm.service')
 const service = new UserFormService()
 
 app.listen(port, () => console.log('the server is running on port ' + port))
+app.use(cors())
 app.use(express.json())
 
 app.post('/answers', async (req, res) => {

@@ -10,3 +10,5 @@
 
 <!-- for database visual monitor -->
   docker compose up -d pgadmin
+  node v12.18.3
+  nvm 0.39.1
