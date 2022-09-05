@@ -14,14 +14,20 @@ const USER = encodeURIComponent(dbUser)
 const PASSWORD = encodeURIComponent(dbPassword)
 
 const URI = `postgres://${USER}:${PASSWORD}@${dbHost}:${dbPort}/${dbName}`
+console.log(URI)
+console.log(URI)
+let sequelize
+try {
+  sequelize = new Sequelize(URI, {
+    dialect: 'postgres',
+    logging: false,
+  })
+  setupModels(sequelize)
 
-const sequelize = new Sequelize(URI, {
-  dialect: 'postgres',
-  logging: true,
-})
+  sequelize.sync()
+} catch (error) {
+  console.log
+}
 
-setupModels(sequelize)
-
-sequelize.sync()
 
 module.exports = sequelize

@@ -25,6 +25,16 @@ const AnswerSchema = {
     type: DataTypes.INTEGER,
     defaultValue: 1
   },
+  comments: {
+    allowNull: false,
+    type: DataTypes.STRING,
+    defaultValue: ''
+  },
+  sex: {
+    allowNull: false,
+    type: DataTypes.BOOLEAN,
+    defaultValue: true
+  },
   createdAt: {
     allowNull: false,
     type: DataTypes.DATE,

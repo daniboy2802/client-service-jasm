@@ -11,6 +11,7 @@ app.use(cors())
 app.use(express.json())
 
 app.post('/answers', async (req, res) => {
+  console.log(req.body)
   try {
     const body = req.body;
     const newAnswer = await service.create(body);

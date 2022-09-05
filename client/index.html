@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costumer service survey</title>
+    <link rel="icon" href="./images/escudo_oax.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.js"></script>
+<script src="exceljs.js"></script>
+</head>
+<body>
+    <div class="logo_gob">
+        <img src="./images/admin_2.png" alt="logo_gob_oax" width="300px"  height="80px">
+    </div>
+<main>
+    <div class="container-test">
+        <div class="toggle">
+            <button class="test-button active" onclick="saveSex('1')">Hombre</button>
+            <button class="test-button" onclick="saveSex('0')">Mujer</button>
+            <!-- <a class="btn2" href="#">Hombre</a>
+            <a class="btn2 open-btn" href="#">Mujer</a> -->
+        </div>
+    </div>
+    <div class="global">
+        <div class="Question1">
+            <p>¿La información que te dieron fue?</p>
+            <div class="image">
+                <img src="./images/sad.png" value="1" alt="low" id="low" width="35px" height="35px" onclick="saveAnswer(this, 'answer1', '0')">
+                <img src="./images/neutral.png" alt="medium" id="medium" width="35px" height="35px" onclick="saveAnswer(this, 'answer1', '1')">
+                <img src="./images/happiness.png" alt="high" id="high" width="35px" height="35px"onclick="saveAnswer(this, 'answer1', '2')">
+            </div>           
+        </div>
+        <div class="Question2">
+            <p>¿Cómo fue la atención?</p>
+            <div class="image">
+                <img src="./images/sad.png" alt="low" id="low2" width="35px" height="35px" onclick="saveAnswer(this, 'answer2', '0')">
+                <img src="./images/neutral.png" alt="medium" id="medium2" width="35px" height="35px" onclick="saveAnswer(this, 'answer2', '1')">
+                <img src="./images/happiness.png" alt="high" id="high2" width="35px" height="35px"onclick="saveAnswer(this, 'answer2', '2')">
+            </div>            
+        </div>
+        <div class="Question3">
+            <p>¿El tiempo para su tramite o servicio fue?</p>
+            <div class="image">
+                <img src="./images/sad.png" alt="low" id="low3" width="35px" height="35px" onclick="saveAnswer(this, 'answer3', '0')">
+                <img src="./images/neutral.png" alt="medium" id="medium3" width="35px" height="35px" onclick="saveAnswer(this, 'answer3', '1')">
+                <img src="./images/happiness.png" alt="high" id="high3" width="35px" height="35px"onclick="saveAnswer(this, 'answer3', '2')">
+            </div>            
+        </div>      
+    </div>
+    <div class="comments">
+        <textarea name="box_comments" id="box_comments" placeholder="Escribe tus comentarios y sugerencias"  maxlength="200" cols="50" rows="5"></textarea>
+    </div>
+    <section class="global_button">
+        <div>
+            <button type="button" class="btn">Enviar</button>
+        </div>
+    </section>
+</main>
+<script src="./main.js"></script>
+</body>
+</html>

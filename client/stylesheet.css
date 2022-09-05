@@ -1,0 +1,176 @@
+:root{
+    --green:#008B52;
+}
+.toogle {
+    display: block;
+    position: relative;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./images/fondo.png');
+}
+.logo_gob{
+   text-align:end;
+   padding-top: 10px;
+}
+.global p{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.image{
+    text-align: center;
+    padding: 5px;
+}
+/*question 1 */
+#low{
+    cursor: pointer;
+    margin: 0 60px;
+    opacity: 0.5;
+}
+#low:hover{
+    opacity: 1;
+}
+#medium{
+    cursor: pointer;
+    margin: 0 60px;
+    opacity: 0.5;
+}
+#medium:hover{
+    opacity: 1;
+}
+
+#high{
+    cursor: pointer;
+    margin: 0 60px;
+    opacity: 0.5;
+}
+#high:hover{
+    opacity: 1;
+}
+
+/*question 2 */
+#low2{
+    cursor: pointer;
+    margin: 0 60px;
+    opacity: 0.5;
+}
+#low2:hover{
+    opacity: 1;
+}
+#medium2{
+    cursor: pointer;
+    margin: 0 60px;
+    opacity: 0.5;
+}
+#medium2:hover{
+    opacity: 1;
+}
+#high2{
+    cursor: pointer;
+    margin: 0 60px;
+    opacity: 0.5;
+}
+#high2:hover{
+    opacity: 1;
+}
+
+/*question 3 */
+#low3{
+    cursor: pointer;
+    margin: 0 60px;
+    opacity: 0.5;
+}
+#low3:hover{
+    opacity: 1;
+}
+#medium3{
+    cursor: pointer;
+    margin: 0 60px;
+    opacity: 0.5;
+}
+#medium3:hover{
+    opacity: 1;
+}
+
+#high3{
+    cursor: pointer;
+    margin: 0 60px;
+    opacity: 0.5;
+}
+#high3:hover{
+    opacity: 1;
+}
+
+.global_button{
+    padding: 20px;
+    text-align: center;
+}
+button{
+    height: 36px;
+    background-color: var(--green);
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    padding: 0 35px;
+    margin-right: 15px;
+}
+button:hover{
+    cursor: pointer;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: white;
+}
+
+/*comments*/
+
+.comments{
+    text-align:  center;
+    padding: 20px;
+}
+#box_comments{
+    border: solid 1px gray;
+}
+
+/*toogle*/
+
+.toogle{
+	text-align: center;
+	margin: 0 auto;
+    text-decoration: none;
+}
+.btn2{
+		cursor: pointer;
+		padding: 0.8em;
+		background: #444;
+		transition: background 0.2s, color 0.2s;
+		float: left;
+		border: 2px solid #555;
+		user-select: none;
+}
+.btn2:first-child{
+			border-radius: 0.5em 0 0 0.5em;
+        }
+.btn2:last-child{
+			border-radius: 0 0.5em 0.5em 0;
+}
+.active{
+		border: 2px solid #003d1c;
+		background: #fff;
+		color: var(--green);
+}
+
+.container-test {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.active:hover {
+    color: var(--green)
+}
